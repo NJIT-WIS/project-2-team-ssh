@@ -24,7 +24,9 @@ export default function Post({ postData }) {
 export async function getStaticPaths() {
   const paths = getAllPostIds()
   return {
-    paths,
+    paths : [
+        { params : { id : "[id] 2"}}
+    ],
     fallback: false
   }
 }
