@@ -63,3 +63,5 @@ Remember, the key to success in this project is consistent effort, collaboration
 
 # Start Working On This - You need to go through all of the content:
 This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+
+# Project links
