@@ -14,7 +14,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <Header title="Develop. Preview. Ship. 🚀" />
+      <Header title="MyWebClass.org" />
       <ul>
         {names.map((name) => (
           <li key={name}>{name}</li>
