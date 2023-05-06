@@ -22,7 +22,7 @@ pages.forEach((page) => {
     const pageUrl = `${config.use.baseURL}${page.path}`;
 
     const expectedTitle = page.title;
-    await checkPageTitle(, expectedTitle);
+    await checkPageTitle(pageUrl, expectedTitle);
   });
 });
 
