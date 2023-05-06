@@ -3,7 +3,7 @@
 const { test, expect } = require('@playwright/test');
 const { chromium } = require('playwright');
 
-test('Website should have no accessibility issues', async ({ page }) => {
+test('Website should have no accessibility issues', async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
