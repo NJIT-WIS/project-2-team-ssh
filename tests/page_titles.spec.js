@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
   use: {
-    pageURL: 'https://njit-wis.github.io/project-2-team-ssh/',
+    pageURL: 'http://localhost:3000/',
     // other Playwright settings
   },
 };
@@ -16,7 +16,7 @@ const TIMEOUT = 30000;
 async function checkPageTitle(pageUrl, expectedTitle) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto('https://njit-wis.github.io/project-2-team-ssh/', { timeout: TIMEOUT });
+  await page.goto('http://localhost:3000/', { timeout: TIMEOUT });
   const pageTitle = await page.title();
   await browser.close();
   expect(pageTitle).toBe(expectedTitle);
