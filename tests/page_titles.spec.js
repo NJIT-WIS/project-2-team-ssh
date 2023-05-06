@@ -25,4 +25,3 @@ pages.forEach((page) => {
     await checkPageTitle(pageUrl, expectedTitle);
   });
 });
-
