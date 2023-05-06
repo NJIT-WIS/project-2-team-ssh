@@ -22,7 +22,7 @@ pages.forEach((page) => {
     const pageUrl = `${config.use.baseURL}${page.path}`;
 
     const expectedTitle = page.title;
-    await checkPageTitle(pageUrl, expectedTitle);
+    await checkPageTitle('https://njit-wis.github.io/project-2-team-ssh/', expectedTitle);
   });
 });
 
