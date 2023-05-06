@@ -4,7 +4,7 @@ const path = require('path');
 
 module.exports = {
   use: {
-    baseURL: 'https://njit-wis.github.io/project-2-team-ssh/',
+    pageURL: 'https://njit-wis.github.io/project-2-team-ssh/',
     // other Playwright settings
   },
 };
