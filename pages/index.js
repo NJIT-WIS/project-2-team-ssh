@@ -1,7 +1,13 @@
 import { useState } from 'react';
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
+import utilStyles from '../styles/utils.module.css'
+import { getSortedPostsData } from '../lib/posts'
+import Link from 'next/link'
+import Date from '../components/date'
 
 function Header({ title }) {
-  return <h1>{title ? title : 'Default title'}</h1>;
+  return <h1>{title ? title : 'Default Title'}</h1>;
 }
 
 export default function HomePage() {
@@ -25,3 +31,4 @@ export default function HomePage() {
     </div>
   );
 }
+
