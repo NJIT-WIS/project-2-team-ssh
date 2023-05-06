@@ -2,12 +2,6 @@ const { test, expect } = require('@playwright/test');
 const { chromium } = require('playwright');
 const path = require('path');
 
-module.exports = {
-  use: {
-    pageURL: 'http://localhost:3000/',
-    // other Playwright settings
-  },
-};
 
 const config = require(path.join(process.cwd(), 'playwright.config.js'));
 const { pages } = require(path.join(process.cwd(), 'tests', 'pages.json'));
