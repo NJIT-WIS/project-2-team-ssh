@@ -9,7 +9,7 @@ const TIMEOUT = 30000;
 async function checkPageTitle(pageUrl, expectedTitle) {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto('https://njit-wis.github.io/project-2-team-ssh/', { timeout: TIMEOUT });
+  await page.goto(pageUrl, { timeout: TIMEOUT });
   const pageTitle = await page.title();
   await browser.close();
   expect(pageTitle).toBe(expectedTitle);
@@ -25,4 +25,3 @@ pages.forEach((page) => {
     await checkPageTitle(pageUrl, expectedTitle);
   });
 });
-
