@@ -1,17 +1,16 @@
 //This is the code for accessibility
 
-const { test, expect } = require('@playwright/test')
+const { test, expect } = require('@playwright/test');
+const { chromium } = require('playwright');
 
-test('MyWebClass.org has alt text on images and label element for newsletter input', async ({ page }) => {
-  // Check for alt text on images
-  await page.goto('http://localhost:3000/')
-  const images = await page.$$('img')
-  for (const image of images) {
-    const alt = await image.getAttribute('alt')
-    expect(alt).toBeTruthy()
-  }
+test('Website should have no accessibility issues', async ({ page }) => {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
 
-  // Check for label element for newsletter input
-  const label = await page.$('label[for="newsletter1"]')
-  expect(label).toBeTruthy()
-})
+  await page.goto('https://njit-wis.github.io/project-2-team-ssh/');
+  const accessibilityReport = await page.accessibility.snapshot();
+
+  expect(accessibilityReport).toHaveNoAccessibilityIssues();
+
+  await browser.close();
+});
