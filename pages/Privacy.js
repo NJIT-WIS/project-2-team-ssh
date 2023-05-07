@@ -81,6 +81,7 @@ export default function Privacy() {
                     <h2>Contact us</h2>
                     <p>If you have any questions about this Privacy Policy, please contact us at [contact email
                         address].</p>
+
                 </section>
       </Layout>
   )
