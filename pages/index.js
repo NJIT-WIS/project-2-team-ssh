@@ -5,11 +5,9 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 
-
-// Home Page with Google Analytics
-function HomePage() {
+export default function Home({ courses }) {
   return (
-    <div>
+    <Layout>
       <Head>
         <title>MyWebclass.org</title>
         <script
@@ -27,18 +25,13 @@ function HomePage() {
           }}
         ></script>
       </Head>
-
-      <main>
-        <h1>Techify Modern Learning</h1>
-        <p>Here you can find all sorts of resources for learning.</p>
+      <nav>
         <ul>
+          <li><a href="/">Home</a></li>
           <li><a href="/courses">Courses</a></li>
-          <li><a href="/tutorials">Tutorials</a></li>
-          <li><a href="/blog">Blog</a></li>
+          <li><a href="/blogs">Blogs</a></li>
         </ul>
-      </main>
-    </div>
-  );
+        </nav>
+      </Layout>
+  )
 }
-
-export default HomePage;
