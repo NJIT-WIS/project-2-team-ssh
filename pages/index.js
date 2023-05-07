@@ -4,10 +4,13 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
+import Navbar from '../components/Navbar'
+
 
 export default function Home({ courses }) {
   return (
     <Layout>
+    <Navbar />
       <Head>
         <title>MyWebclass.org</title>
         <script
@@ -25,6 +28,7 @@ export default function Home({ courses }) {
           }}
         ></script>
       </Head>
+
       <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
         <div style={{width: '900px', display: 'flex', flexDirection: 'column'}}>
             <h1> Techify Modern Learning </h1>
