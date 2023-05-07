@@ -6,7 +6,7 @@ import Link from 'next/link'
 import Date from '../components/date'
 
 function Header({ title }) {
-  return <h1>{title ? title : 'Default Title'}</h1>;
+  return <h1>{title ? title : 'MyWebclass.org'}</h1>;
 }
 
 export default function HomePage() {
@@ -30,4 +30,5 @@ export default function HomePage() {
     </div>
   );
 }
+
 
