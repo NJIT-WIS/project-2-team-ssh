@@ -27,6 +27,13 @@ export default function Navbar() {
             <h4 className={styles.navLink}> About</h4>
           </Link>
         </li>
+        <li className={styles.navItem}>
+          <Link href="/Privacy">
+            {/* <a className={styles.navLink}>Privacy Policy</a> */}
+            <h4 className={styles.navLink}> Privacy</h4>
+          </Link>
+        </li>
+
 
       </ul>
     </nav>
