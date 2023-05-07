@@ -17,6 +17,9 @@
         "path": "/About",
         "title": "MyWebClass.org | About"
       },
-
+      {
+        "path": "/Privacy",
+        "title": "MyWebClass.org | Privacy"
+      }
     ]
 }
