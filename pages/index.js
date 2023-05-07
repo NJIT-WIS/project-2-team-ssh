@@ -5,30 +5,40 @@ import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
 
-function Header({ title }) {
-  return <h1>{title ? title : 'MyWebclass.org'}</h1>;
-}
 
-export default function HomePage() {
-  const names = ['Suman S. Mhalsank', 'Srinivas Bojja', 'Harshith Reddy'];
-  const [likes, setLikes] = useState(0);
-
-  function handleClick() {
-    setLikes(likes + 1);
-  }
-
+// Home Page with Google Analytics
+function HomePage() {
   return (
     <div>
-      <Header title="MyWebClass.org" />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
+      <Head>
+        <title>MyWebclass.org</title>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-CXE9WXQFQG"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-CXE9WXQFQG', { page_path: window.location.pathname });
+          `,
+          }}
+        ></script>
+      </Head>
 
-      <button onClick={handleClick}>Like ({likes})</button>
+      <main>
+        <h1>Techify Modern Learning</h1>
+        <p>Here you can find all sorts of resources for learning.</p>
+        <ul>
+          <li><a href="/courses">Courses</a></li>
+          <li><a href="/tutorials">Tutorials</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </main>
     </div>
   );
 }
 
-
+export default HomePage;
