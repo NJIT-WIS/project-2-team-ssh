@@ -1,4 +1,3 @@
-## This is the Team Productivity Log
 
 ## Team Productivity Log
 This log is to track issue title,story points, issue link, status, assigned to, assigned on, completed on, category, status notes for the entire team working on this project
