@@ -4,6 +4,15 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
+import React from 'react';
+import {
+Nav,
+NavLink,
+Bars,
+NavMenu,
+NavBtn,
+NavBtnLink,
+} from './NavbarElements';
 
 export default function Home({ courses }) {
   return (
@@ -35,3 +44,41 @@ export default function Home({ courses }) {
       </Layout>
   )
 }
+
+
+const Navbar = () => {
+return (
+	<>
+	<Nav>
+		<Bars />
+
+		<NavMenu>
+		<NavLink to='/home' activeStyle>
+			Home
+		</NavLink>
+		<NavLink to='/blogs' activeStyle>
+			Blogs
+		</NavLink>
+		<NavLink to='/courses' activeStyle>
+			Courses
+		</NavLink>
+		<NavLink to='/about' activeStyle>
+			About
+		</NavLink>
+
+		<NavLink to='/sign-up' activeStyle>
+			Sign Up
+		</NavLink>
+		{/* Second Nav */}
+		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
+		</NavMenu>
+		<NavBtn>
+		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
+		</NavBtn>
+	</Nav>
+	</>
+);
+};
+
+export default Navbar;
+

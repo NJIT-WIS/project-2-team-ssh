@@ -1,9 +1,26 @@
+
 {
     "pages": [
       {
         "path": "/",
         "title": "MyWebClass.org"
-      }
+      },
+      {
+        "path": "/Home",
+        "title": "MyWebClass.org | Home"
+      },
+      {
+        "path": "/Blogs",
+        "title": "MyWebClass.org | Blogs"
+      },
+      {
+        "path": "/Courses",
+        "title": "MyWebClass.org | Courses"
+      },
+      {
+        "path": "/About",
+        "title": "MyWebClass.org | About"
+      },
+
     ]
 }
-  
