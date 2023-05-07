@@ -12,5 +12,5 @@ test('Website should have title "MyWebclass.org"', async () => {
 
   await browser.close();
 
-  expect(pageTitle).toBe('');
+  expect(pageTitle).toBe('MyWebclass.org');
 });
