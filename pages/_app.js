@@ -1,24 +1,30 @@
 import '../styles/global.css'
-import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages';
-import About from './pages/about';
-import Blogs from './pages/blogs';
+import { useRouter } from "next/router"
+import { useEffect } from "react"
 
-function App() {
+// const dotenv = require('dotenv');
+// dotenv.config();
+
+export default function App({ Component, pageProps }) {
+  const router = useRouter();
+  useEffect(() => {
+    const handleRouteChange = url => {
+      window.gtag('config', 'G-5HGHEF87SL', {
+        page_path: url,
+      });
+    }
+    router.events.on('routeChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    }
+  }, [router.events]);
+
   return (
-    <Router>
-      <Navbar />
-      <Routes>
-        <Route path='/' exact component={Home} />
-        <Route path='/blogs' component={Blogs} />
-        <Route path='/courses' component={Courses} />
-        <Route path='/about' component={About} />
+    <>
 
 
-      </Routes>
-    </Router>
-  );
+  <Component {...pageProps} />
+
+  </>
+  )
 }
-
-export default App;

@@ -4,15 +4,6 @@ import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 import Date from '../components/date'
-import React from 'react';
-import {
-Nav,
-NavLink,
-Bars,
-NavMenu,
-NavBtn,
-NavBtnLink,
-} from './NavbarElements';
 
 export default function Home({ courses }) {
   return (
@@ -34,51 +25,14 @@ export default function Home({ courses }) {
           }}
         ></script>
       </Head>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/courses">Courses</a></li>
-          <li><a href="/blogs">Blogs</a></li>
-        </ul>
-        </nav>
-      </Layout>
+      <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
+        <div style={{width: '900px', display: 'flex', flexDirection: 'column'}}>
+            <h1> Techify Modern Learning </h1>
+            <p style={{ fontSize: '20px', textAlign: 'justify' }}>Hello, We are a team of Techies who are here to techify our learning style with interactive quizzes, weekly blogs, Our courses</p>
+
+        </div>
+
+      </div>
+    </Layout>
   )
 }
-
-
-const Navbar = () => {
-return (
-	<>
-	<Nav>
-		<Bars />
-
-		<NavMenu>
-		<NavLink to='/home' activeStyle>
-			Home
-		</NavLink>
-		<NavLink to='/blogs' activeStyle>
-			Blogs
-		</NavLink>
-		<NavLink to='/courses' activeStyle>
-			Courses
-		</NavLink>
-		<NavLink to='/about' activeStyle>
-			About
-		</NavLink>
-
-		<NavLink to='/sign-up' activeStyle>
-			Sign Up
-		</NavLink>
-		{/* Second Nav */}
-		{/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-		</NavMenu>
-		<NavBtn>
-		<NavBtnLink to='/signin'>Sign In</NavBtnLink>
-		</NavBtn>
-	</Nav>
-	</>
-);
-};
-
-export default Navbar;
-

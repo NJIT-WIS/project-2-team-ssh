@@ -1,18 +1,17 @@
-import React from 'react';
+import React from 'react'
+import Head from 'next/head'
+import utilStyles from '../styles/utils.module.css'
+import Layout, { siteTitle } from '../components/layout'
 
-const Courses = () => {
-return (
-	<div
-	style={{
-		display: 'flex',
-		justifyContent: 'Right',
-		alignItems: 'Right',
-		height: '100vh'
-	}}
-	>
-	<h1>Welcome to MyWebclass.org. We have a wide variety of courses you can scroll through</h1>
-	</div>
-);
-};
-
-export default Courses;
+export default function Courses() {
+  return (
+      <Layout home>
+        <Head>
+            <title>MyWebClass.org | Courses</title>
+        </Head>
+        <section className={utilStyles.headingMd}>
+            <p>Welcome to MyWebclass.org, We have a variety of courses, you can scroll through</p>
+        </section>
+      </Layout>
+  )
+}
