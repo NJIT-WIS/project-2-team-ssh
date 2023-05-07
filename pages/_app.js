@@ -5,11 +5,6 @@ import Home from './pages';
 import About from './pages/about';
 import Blogs from './pages/blogs';
 
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
-
 function App() {
   return (
     <Router>
