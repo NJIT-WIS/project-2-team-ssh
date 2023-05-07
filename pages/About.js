@@ -10,16 +10,16 @@ const About = () => {
       designation: 'Instructor',
     },
     {
-      name: 'Suman S. Mhalsank',
+      name: 'S - Suman S. Mhalsank',
       designation: 'Developer',
     },
     {
-      name: 'Srinivas Bojja',
+      name: 'S- Srinivas Bojja',
       designation: 'Developer',
 
     },
     {
-      name: 'Harshith Reddy',
+      name: 'H - Harshith Reddy',
       designation: 'Developer',
 
     },

@@ -7,7 +7,7 @@ import Date from '../components/date'
 import Navbar from '../components/Navbar'
 
 
-export default function Home({ courses }) {
+export default function Home({ }) {
   return (
     <Layout>
     <Navbar />
@@ -30,13 +30,12 @@ export default function Home({ courses }) {
       </Head>
 
       <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
-        <div style={{width: '900px', display: 'flex', flexDirection: 'column'}}>
+        <div style={{width: '1000px', display: 'flex', flexDirection: 'column'}}>
             <h1> Techify Modern Learning </h1>
             <p style={{ fontSize: '20px', textAlign: 'justify' }}>Hello, We are a team of Techies who are here to techify our learning style with interactive quizzes, weekly blogs, Our courses</p>
-
         </div>
-
       </div>
+
     </Layout>
   )
 }
