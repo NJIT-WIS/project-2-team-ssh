@@ -10,6 +10,5 @@ test('Website should have no accessibility issues', async () => {
   await page.goto('https://njit-wis.github.io/project-2-team-ssh/');
   const accessibilityReport = await page.accessibility.snapshot();
 
-
   await browser.close();
 });
