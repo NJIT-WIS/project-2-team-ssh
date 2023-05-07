@@ -9,6 +9,6 @@ This log is to track issue title,story points, issue link, status, assigned to, 
 
 | Issue Title          | Story Points |   Issue Link |    Status | Assigned to |  Assigned on | Completed on |        Category | Status notes |
 |:---------------------|:------------:|-------------:|----------:|------------:|-------------:|-------------:|----------------:|------------:|
-| Homepage Development |      5       |         | Completed | Suman S Mhalsank,Srinivas Bojja | 25 March '23 | 25 March '23 | Website Feature | Made Changes to the weclass simulation |
-| Automated Testing    |      2       |            | Completed | Suman S Mhalsank | 25 March '23 | 25 March '23 |  Research | Performed research on automated testing, Specifically Playwright |
-|  Accesibility Research and Implementation  | 2 |  |Completed | Suman S Mhalsank | 25 March '23 | 25 March '23 |Research and Testing|  Did research on what accessibility is, how to perform and wrote playwright test |
+| Homepage Development |      5       |         | Completed | Suman S Mhalsank,Srinivas Bojja |    6 May '23 | 6 May'23 | Website Feature | Made Changes to the weclass simulation |
+| Automated Testing    |      2       |            | Completed | Suman S Mhalsank |    6 May '23 | 6 May '23 |  Research | Performed research on automated testing, Specifically Playwright |
+|  Accesibility Research and Implementation  | 2 |  |Completed | Suman S Mhalsank | 6 May '23 | 6 May '23 |Research and Testing|  Did research on what accessibility is, how to perform and wrote playwright test |
