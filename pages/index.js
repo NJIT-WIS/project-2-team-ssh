@@ -6,16 +6,9 @@ import Link from 'next/link'
 import Date from '../components/date'
 
 function Header({ title }) {
-  return <h1>{title ? title : 'Default Title'}</h1>;
+  return <h1>{title ? title : 'MyWebclass.org'}</h1>;
 }
 
-export default function HomePage() {
-  const names = ['Suman S. Mhalsank', 'Srinivas Bojja', 'Harshith Reddy'];
-  const [likes, setLikes] = useState(0);
-
-  function handleClick() {
-    setLikes(likes + 1);
-  }
 
   return (
     <div>
@@ -31,3 +24,10 @@ export default function HomePage() {
   );
 }
 
+export default function HomePage() {
+  const names = ['Suman S. Mhalsank', 'Srinivas Bojja', 'Harshith Reddy'];
+  const [likes, setLikes] = useState(0);
+
+  function handleClick() {
+    setLikes(likes + 1);
+  }
