@@ -10,7 +10,7 @@ import { getSortedPostsData } from '../lib/posts'
 const gtag = "https://www.googletagmanager.com/gtag/js?id=G-5HGHEF87SL";
 
 export default function Home({ allPostsData }) {
-  
+
   return (
     <Layout home>
       <Head>
