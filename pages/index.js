@@ -10,8 +10,8 @@ import Navbar from '../components/Navbar'
 export default function Home({ }) {
   return (
     <Layout>
-    <Navbar />
       <Head>
+      <Navbar />
         <title>MyWebclass.org</title>
         <script
           async
@@ -28,13 +28,16 @@ export default function Home({ }) {
           }}
         ></script>
       </Head>
-
+      <div style={{}}>
+            <img style={{ height: '450px', width: '450px'}} src="images/techify.png" alt="a teacher with students" width="720px"/>
+       </div>
       <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
-        <div style={{width: '1000px', display: 'flex', flexDirection: 'column'}}>
+        <div style={{width: '1200px', display: 'flex', flexDirection: 'column'}}>
             <h1> Techify Modern Learning </h1>
             <p style={{ fontSize: '20px', textAlign: 'justify' }}>Hello, We are a team of Techies who are here to techify our learning style with interactive quizzes, weekly blogs, Our courses</p>
         </div>
       </div>
+
 
     </Layout>
   )
