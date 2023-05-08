@@ -1,5 +1,11 @@
  .navbar {
+    display: flex;
     background-color: #ff5500;
+    height: 80px;
+    justify-content: space-between;
+    padding: 8px 16px;
+    margin: 0 5px;
+    margin-top: 5px;
 }
 
   .navList {
@@ -8,15 +14,18 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+
   }
 
   .navItem {
-    margin: 0 3rem;
+    margin: 0 2rem;
+
   }
 
   .navLink {
     text-decoration: none;
     color: #ffffff;
+
   }
 
   .navLink:hover {

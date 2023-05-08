@@ -33,8 +33,6 @@ export default function Navbar() {
             <h4 className={styles.navLink}> Privacy</h4>
           </Link>
         </li>
-
-
       </ul>
     </nav>
   )
