@@ -7,27 +7,27 @@ import Date from '../components/date'
 import Navbar from '../components/Navbar'
 import { getSortedPostsData } from '../lib/posts'
 
+const gtag = "https://www.googletagmanager.com/gtag/js?id=G-5HGHEF87SL";
 
-export default function Home({allPostsData }) {
+export default function Home({ allPostsData }) {
+  
   return (
     <Layout home>
       <Head>
       <Navbar />
         <title>MyWebclass.org</title>
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-5HGHEF87SL"
-        ></script>
+        <script async src={gtag} />
         <script
           dangerouslySetInnerHTML={{
             __html: `
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-5HGHEF87SL', { page_path: window.location.pathname });
-          `,
+            gtag('config', 'G-5HGHEF87SL', { page_path: window.location.pathname,
+            });
+          `
           }}
-        ></script>
+        />
       </Head>
       <div style={{}}>
             <img style={{ height: '600px', width: '1700px'}} src="images/techify.png" alt="a teacher with students" width="720px" />
@@ -41,7 +41,7 @@ export default function Home({allPostsData }) {
 
 
     </Layout>
-  );
+  )
 }
 
 export async function getStaticProps() {
