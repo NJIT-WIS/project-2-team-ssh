@@ -5,7 +5,7 @@ test('Website should have no accessibility issues', async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
 
-  await page.goto('https://njit-wis.github.io/project-2-team-ssh/');
+  await page.goto('http://localhost:3000/');
   const accessibilityReport = await page.accessibility.snapshot();
 
   // Check that each label element has a corresponding input element
@@ -29,7 +29,7 @@ test('Website should have no accessibility issues', async () => {
   await browser.close();
 });
 
-/* test('Cookie button should be clickable', async ({ page }) => {
+/*test('Cookie button should be clickable', async ({ page }) => {
   await page.goto('https://example.com'); // replace with your website URL
 
   // Click the accept button and check if the cookie consent message is hidden
