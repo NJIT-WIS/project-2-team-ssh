@@ -32,7 +32,7 @@ export default function Home({ allPostsData }) {
         />
       </Head>
       <div style={{}}>
-            <img style={{ height: '600px', width: '1700px'}} src="images/techify.png" alt="a teacher with students" width="720px" />
+            <img style={{ height: '600px', width: '1600px'}} src="images/techify.png" alt="a teacher with students" width="720px" />
        </div>
       <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
         <div style={{width: '1200px', display: 'flex', flexDirection: 'column'}}>
