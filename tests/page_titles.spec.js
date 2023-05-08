@@ -21,6 +21,6 @@ pages.forEach((page) => {
     const pageUrl = `${config.use.baseURL}${page.path}`;
 
     const expectedTitle = page.title;
-    await checkPageTitle(pageUrl, 'Application error: a client-side exception has occurred');
+    await checkPageTitle(pageUrl, expectedTitle);
   });
 });
