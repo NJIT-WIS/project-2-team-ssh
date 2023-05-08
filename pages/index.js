@@ -15,7 +15,7 @@ export default function Home({ allPostsData }) {
     <Layout home>
       <Head>
       <Navbar />
-        <title>MyWebclass.org</title>
+        <title>{ siteTitle }</title>
         <meta name="description" content="MyWebclass.org" />
         <meta name="keywords" content="Techify, Modern, learning, MyWebclass.org" />git
         <script async src={gtag} />
