@@ -18,7 +18,8 @@
   }
 
   .navItem {
-    margin: 0 2rem;
+    margin: 0 3rem;
+    font-size: 24px;
 
   }
 
@@ -32,3 +33,4 @@
     text-decoration: none;
     color: #C1B3A0;
   }
+
