@@ -17,7 +17,7 @@ export default function Home({ allPostsData }) {
       <Navbar />
         <title>MyWebclass.org</title>
         <meta name="description" content="MyWebclass.org" />
-        <meta name="keywords" content="Techify, Modern, learning, MyWebclass.org" />
+        <meta name="keywords" content="Techify, Modern, learning, MyWebclass.org" />git
         <script async src={gtag} />
         <script
           dangerouslySetInnerHTML={{
