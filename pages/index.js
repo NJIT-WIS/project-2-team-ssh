@@ -10,7 +10,7 @@ import { getSortedPostsData } from '../lib/posts'
 
 export default function Home({allPostsData }) {
   return (
-    <Layout>
+    <Layout home>
       <Head>
       <Navbar />
         <title>MyWebclass.org</title>
