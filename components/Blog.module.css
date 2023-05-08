@@ -1,7 +1,10 @@
 .image-container {
   display: flex;
   flex-direction: row;
-  gap: 10px; /* spacing between images */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .image-container {
