@@ -14,7 +14,7 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
-      <Navbar />
+
         <title>{ siteTitle }</title>
         <meta name="description" content="MyWebclass.org" />
         <meta name="keywords" content="Techify, Modern, learning, MyWebclass.org" />git

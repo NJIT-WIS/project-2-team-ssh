@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Script from 'next/script'
-
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
@@ -14,6 +13,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
+      <Navbar />
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
