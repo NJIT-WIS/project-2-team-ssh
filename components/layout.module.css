@@ -45,12 +45,13 @@
 }
 
 .courselist {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   list-style-type: disc;
   margin: 0;
   padding: 0;
   margin: '3rem';
   justifyContent: 'space-between';
+  list-style: none;
 }
 
 .courselist li {
@@ -58,6 +59,7 @@
   padding-left: 20px;
   margin: '3rem';
   justifyContent: 'space-between';
+  list-style: none;
 }
 
 

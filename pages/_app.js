@@ -1,6 +1,8 @@
 import  '../styles/utils.module.css'
 import { useRouter } from "next/router"
 import React, { useState, useEffect } from 'react';
+import globalStyles from '../components/globals.css';
+
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
@@ -73,6 +75,8 @@ export default function App({ Component, pageProps }) {
             margin-top: 50px;
             display: flex;
             flex-direction: column;
+            margin-right: 550px;
+            margin-left: 550px;
           }
 
           .contact-label {
@@ -80,6 +84,7 @@ export default function App({ Component, pageProps }) {
           }
 
           .contact-input {
+             margin-right: 1000px;
             margin-bottom: 20px;
             padding: 5px;
             border: 1px solid #ccc;
@@ -90,6 +95,7 @@ export default function App({ Component, pageProps }) {
 
           .contact-submit-btn {
             background-color: #4CAF50;
+            margin-left: 200px;
             color: white;
             border: none;
             padding: 10px 20px;
