@@ -11,43 +11,43 @@
   margin: 3rem 0 0;
 }
 
-.h1 {
+.heading1 {
   font-size: 3rem;
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   padding-left : 50px;
 }
 
-.h2 {
+.heading2 {
   font-size: 2.5rem;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
 }
 
-.h3 {
+.heading3 {
   font-size: 1.8rem;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
 
-.h4 {
+.heading4 {
   font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
 }
 
-.ul {
+.courselist {
   list-style-type: disc;
   margin: 0;
   padding: 0;
 }
 
-.ul li {
+.courselist li {
   margin-bottom: 10px;
   padding-left: 20px;
 }
 
-.ul li:before {
+.courselist li:before {
   content: "\2022";
   color: #333;
   font-weight: bold;
