@@ -33,12 +33,16 @@ export default function Home({ allPostsData }) {
         />
       </Head>
       <div style={{}}>
-            <img style={{ height: '600px', width: '1600px'}} src="images/techify.png" alt="a teacher with students" width="720px" />
+            <img style={{ height: '600px', width: '1590px'}} src="images/techify.png" alt="a teacher with students" width="720px" />
        </div>
-      <div style={{display: 'flex', margin: '3rem', justifyContent: 'space-between'}}>
-        <div style={{width: '1200px', display: 'flex', flexDirection: 'column'}}>
+      <div style={{display: 'flex', margin: '1rem', justifyContent: 'space-between'}}>
+        <div style={{width: '1500px', display: 'flex', flexDirection: 'column'}}>
+            <div style={{marginLeft : '400px'}} >
             <h1 className={layoutStyles.heading1}> Techify Modern Learning </h1>
+            </div>
+            <div style={{marginLeft : '40px'}} >
             <h3 className={layoutStyles.heading3}> Hello, We are a team of Techies who are here to techify our learning style with interactive quizzes, weekly blogs, Our courses</h3>
+        </div>
         </div>
       </div>
     </Layout>

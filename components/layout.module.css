@@ -16,43 +16,48 @@
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
   padding-left : 50px;
+  margin: '3rem';
+  justifyContent: 'space-between';
 }
 
 .heading2 {
   font-size: 2.5rem;
   font-weight: 600;
   font-family: 'Open Sans', sans-serif;
+  margin: '3rem';
+  justifyContent: 'space-between';
 }
 
 .heading3 {
   font-size: 1.8rem;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
+  margin: '3rem';
+  justifyContent: 'space-between';
 }
 
 .heading4 {
   font-size: 1.5rem;
   font-weight: 400;
   font-family: 'Lato', sans-serif;
+  margin: '3rem';
+  justifyContent: 'space-between';
 }
 
 .courselist {
+  font-size: 1.2rem;
   list-style-type: disc;
   margin: 0;
   padding: 0;
+  margin: '3rem';
+  justifyContent: 'space-between';
 }
 
 .courselist li {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   padding-left: 20px;
+  margin: '3rem';
+  justifyContent: 'space-between';
 }
 
-.courselist li:before {
-  content: "\2022";
-  color: #333;
-  font-weight: bold;
-  display: inline-block;
-  width: 2em;
-  margin-left: -1em;
-}
 
