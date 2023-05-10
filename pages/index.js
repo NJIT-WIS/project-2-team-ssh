@@ -40,8 +40,12 @@ export default function Home({ allPostsData }) {
             <div style={{marginLeft : '400px'}} >
             <h1 className={layoutStyles.heading1}> Techify Modern Learning </h1>
             </div>
-            <div style={{marginLeft : '40px'}} >
-            <h3 className={layoutStyles.heading3}> Hello, We are a team of Techies who are here to techify our learning style with interactive quizzes, weekly blogs, Our courses</h3>
+            <div style={{marginLeft : '40px', justifyContent: 'space-between'}} >
+            <h3 className={layoutStyles.heading3}>  We are a team of skilled professionals at MyWebclass.org who are dedicated to enhancing your learning experience. We offer a range of interactive quizzes, weekly blogs, and comprehensive courses in web development, devops, and management.
+
+Our goal is to provide you with the necessary tools and resources to enhance your knowledge and skills, and we are committed to supporting you every step of the way. Whether you are an experienced professional or a beginner, our courses are designed to meet your unique needs and help you achieve your goals.
+
+Join us today and discover the power of learning to Techify Modern Learning!</h3>
         </div>
         </div>
       </div>
