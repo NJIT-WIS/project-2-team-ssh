@@ -86,3 +86,6 @@ export default function Privacy() {
       </Layout>
   )
 }
+
+
+export default Privacy;
