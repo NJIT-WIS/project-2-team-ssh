@@ -63,6 +63,8 @@ export default function Courses() {
   );
 };
 
+
+export default Courses;
 /*<h3 className={layoutStyles.heading3}>Some of Our Most Popular Web Development Courses:</h3>
 <ul className={layoutStyles.courselist}>
           <li>Web Development Fundamentals</li>
