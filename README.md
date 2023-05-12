@@ -1,7 +1,10 @@
 # Project 2
 
-sm637@njit.edu
-Please READ everything I am giving you and everyone needs to submit in Canvas.
+### Team Memmbers
+- sm637@njit.edu
+- sb2542@njit.edu
+- hc444@njit.edu
+### Please READ everything I am giving you and everyone needs to submit in Canvas.
 ## Install Instructions
 **Run:**
 - npm install
