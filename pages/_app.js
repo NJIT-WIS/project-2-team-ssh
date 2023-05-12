@@ -107,7 +107,7 @@ export default function App({ Component, pageProps }) {
             cursor: pointer;
           }
         `}</style>
-
+    <Component {...pageProps} />
       </>
     )
  }
