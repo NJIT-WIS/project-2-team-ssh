@@ -4,7 +4,7 @@ import utilStyles from '../styles/utils.module.css'
 import Layout, { siteTitle } from '../components/layout'
 
 
-export default function Blogs() {
+export default function Blogs({ allPostsData }) {
   return (
     <Layout home>
       <Head>
@@ -23,4 +23,13 @@ export default function Blogs() {
       </div>
     </Layout>
   )
+}
+
+export async function getStaticProps() {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData
+    }
+  }
 }
