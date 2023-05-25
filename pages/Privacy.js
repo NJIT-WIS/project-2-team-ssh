@@ -88,4 +88,3 @@ export default function Privacy() {
 }
 
 
-export default Privacy;
